@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Question</title>
+</head>
+<body>
+    <h1>Add Question to Quiz</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        {{ form.text.label }} {{ form.text() }}<br>
+        {{ form.option1.label }} {{ form.option1() }}<br>
+        {{ form.option2.label }} {{ form.option2() }}<br>
+        {{ form.option3.label }} {{ form.option3() }}<br>
+        {{ form.option4.label }} {{ form.option4() }}<br>
+        {{ form.correct_option.label }} {{ form.correct_option() }}<br>
+        {{ form.submit() }}
+    </form>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Home</title>
+</head>
+<body>
+    <h1>Welcome to the Quiz App</h1>
+    <a href="/register">Register</a> | <a href="/login">Login</a> | <a href="/create_quiz">Create Quiz</a>
+    <h2>Available Quizzes</h2>
+    <ul>
+        {% for quiz in quizzes %}
+        <li><a href="/quiz/{{ quiz.id }}/take">{{ quiz.title }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
